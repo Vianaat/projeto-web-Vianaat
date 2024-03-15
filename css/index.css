@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    background-image: url("../img/hogearts.webp");
+
+    width: 100%;
+    height: 750px;
+    color: white;
+    justify-content: initial;
+}
+
+.titulo img {
+    height: 240px;
+    margin-left: 230px;
+}
+
+.animacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    animation: animacaoDescer 1s infinite alternate;
+}
+
+.animacao span {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+@keyframes animacaoDescer {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+}
+
+.apresentaçao {
+    background: #0d0e1d;
+    height: 800px;
+    display: flex;
+    position: relative;
+    color: #d0c2a0fa;
+}
+
+
+
+.apresentaçao img {
+    margin-left: 700px;
+    margin-top: 60px;
+}
+
+.texto1 {
+    position: absolute;
+    top: 300px;
+    right: 900px;
+    margin-left: 50PX;
+}    
+
+.corvinal {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: end;
+}
+
+.corvinal p {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 4%;
+    font-size: 20px;
+    color: #c6c2c2;
+}
+
+.sonserina {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: end;
+}
+
+.texto2 {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 3%;
+    font-size: 20px;
+    color: #c6c2c2;
+}
+
+.lufa-lufa {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: end;
+}
+
+.texto3 {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 3%;
+    font-size: 20px;
+    color: black;
+}
+
+
+.grifinoria {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: end;
+}
+
+.texto4 {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 3%;
+    font-size: 20px;
+    color: #d0c2a0fa;
+}
+
+.imagem {
+    width: 100%;
+}
+
+.fim {
+    background: #0d0e1d;
+    height: 800px;
+    display: flex;
+    position: relative;
+    color: #d0c2a0fa;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.fim img {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    
+}
+
+.link {
+    margin-top: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.link a {
+    color: #c6c2c2;
+}
+
+.rodape {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0d0e1d;
+        padding: 5px;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid grey;
+        height: 20px;    
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo {
+        height: 500px;
+    }
+
+    .titulo img {
+        height: 150px;
+        margin-left: 30px;
+    }
+
+    .animacao {
+        bottom: 10px;
+    }
+
+    .apresentaçao img {
+        margin-left: 50px;
+    }
+
+    .texto1 {
+        top: 200px;
+        right: 50px;
+    }
+
+    .corvinal p,
+    .texto2,
+    .texto3,
+    .texto4 {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .fim img {
+        width: 80%;
+        height: auto;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .titulo {
+        height: 400px;
+    }
+
+    .titulo img {
+        height: 120px;
+        margin-left: 20px;
+    }
+
+    .animacao {
+        bottom: 5px;
+    }
+
+    .apresentaçao img {
+        margin-left: 20px;
+    }
+
+    .texto1 {
+        top: 150px;
+        right: 20px;
+    }
+
+    .corvinal p,
+    .texto2,
+    .texto3,
+    .texto4 {
+        width: 90%;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+
+    .fim img {
+        width: 90%;
+        height: auto;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+}
+
